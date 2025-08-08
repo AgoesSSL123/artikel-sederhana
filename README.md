@@ -1,0 +1,2 @@
+# artikel-sederhana
+masih pemula
