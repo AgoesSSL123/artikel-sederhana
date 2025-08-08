@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artikel Basic Web - HTML & CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #bbb;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pengenalan HTML dan CSS: Dasar-Dasar Web Development</h1>
+
+    <h2>1. Apa Itu HTML dan CSS? (Pengertian)</h2>
+    <p><strong>HTML</strong> (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat struktur dasar halaman web. HTML berfungsi sebagai kerangka halaman, seperti judul, paragraf, gambar, dan tautan.</p>
+    <p><strong>CSS</strong> (Cascading Style Sheets) adalah bahasa desain yang digunakan untuk mengatur tampilan dan gaya elemen HTML. Dengan CSS, kita bisa mengubah warna, ukuran, font, posisi, dan tata letak elemen halaman web.</p>
+
+    <h2>2. Sejarah: Kenapa Ada HTML dan CSS?</h2>
+    <ul>
+        <li><strong>HTML</strong> pertama kali dikembangkan oleh Tim Berners-Lee pada tahun 1991 untuk membuat dokumen hypertext di internet.</li>
+        <li><strong>CSS</strong> diperkenalkan oleh Håkon Wium Lie pada tahun 1996 karena HTML terlalu terbatas dalam mengatur tampilan. Sebelumnya, semua gaya ditulis langsung di HTML.</li>
+    </ul>
+    <p>Tanpa CSS, semua halaman web akan tampak sangat sederhana dan monoton.</p>
+
+    <h2>3. Jenis-Jenis HTML dan CSS</h2>
+    <h3>Jenis HTML:</h3>
+    <ul>
+        <li>HTML4: Versi lama, digunakan tahun 1997–2014.</li>
+        <li>XHTML: Lebih ketat, mirip XML.</li>
+        <li>HTML5: Versi terbaru, mendukung video, audio, dan struktur semantik.</li>
+    </ul>
+    <h3>Jenis CSS:</h3>
+    <ul>
+        <li>Inline CSS: Ditulis langsung di dalam elemen HTML.</li>
+        <li>Internal CSS: Ditulis dalam tag <code>&lt;style&gt;</code> di dalam <code>&lt;head&gt;</code>.</li>
+        <li>External CSS: Ditulis dalam file <code>.css</code> terpisah dan dihubungkan dengan tag <code>&lt;link&gt;</code>.</li>
+    </ul>
+
+    <h2>4. Contoh Penulisan / Sintaks Utama</h2>
+    <h3>Contoh HTML:</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Contoh HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Halo Dunia&lt;/h1&gt;
+  &lt;p&gt;Ini paragraf pertama.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3>Contoh CSS:</h3>
+    <pre><code>body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+</code></pre>
+
+    <h2>5. Cara Kerja + Diagram Masukan</h2>
+    <p><strong>Diagram Alur Sederhana:</strong></p>
+    <pre><code>[User/Browser]
+     ↓
+Meminta halaman web
+     ↓
+[Server] mengirim file HTML + CSS
+     ↓
+[Browser] menampilkan halaman ke user
+</code></pre>
+    <ul>
+        <li>HTML dan CSS dikirim dari server ke browser.</li>
+        <li>Browser membaca HTML untuk struktur, dan CSS untuk tampilan.</li>
+        <li>Kombinasi keduanya menghasilkan halaman yang utuh dan menarik.</li>
+    </ul>
+
+    <h2>6. Manfaat HTML dan CSS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Menyusun struktur halaman</td>
+                <td>Membuat tampilan lebih menarik</td>
+            </tr>
+            <tr>
+                <td>Menyisipkan teks, gambar, link, dll</td>
+                <td>Mengatur warna, ukuran, posisi</td>
+            </tr>
+            <tr>
+                <td>Kompatibel dengan semua browser</td>
+                <td>Membuat tampilan responsif</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>7. Apa yang Membedakan HTML dan CSS?</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Perbedaan</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fungsi</td>
+                <td>Struktur</td>
+                <td>Desain</td>
+            </tr>
+            <tr>
+                <td>Tipe</td>
+                <td>Markup</td>
+                <td>Stylesheet</td>
+            </tr>
+            <tr>
+                <td>Sintaks</td>
+                <td>&lt;p&gt;Hello&lt;/p&gt;</td>
+                <td>p &#123; color: red; &#125;</td>
+            </tr>
+            <tr>
+                <td>Letak</td>
+                <td>File <code>.html</code></td>
+                <td>File <code>.css</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>8. Kelebihan dan Kekurangan</h2>
+    <h3>Kelebihan:</h3>
+    <ul>
+        <li>HTML: Mudah dipelajari, ringan, universal.</li>
+        <li>CSS: Memisahkan tampilan dari struktur, fleksibel, responsif.</li>
+    </ul>
+    <h3>Kekurangan:</h3>
+    <ul>
+        <li>HTML tidak bisa mengatur tampilan dengan baik tanpa CSS.</li>
+        <li>CSS bisa menjadi kompleks saat proyek besar.</li>
+        <li>Tidak interaktif (butuh JavaScript untuk fungsi dinamis).</li>
+    </ul>
+
+    <h2>9. Framework CSS yang Umum Digunakan</h2>
+    <ul>
+        <li>Bootstrap – framework populer untuk desain responsif.</li>
+        <li>Tailwind CSS – utility-first framework yang fleksibel.</li>
+        <li>Bulma – modern, ringan, dan mudah digunakan.</li>
+        <li>Foundation – mirip Bootstrap, tapi lebih kompleks.</li>
+    </ul>
+
+    <hr />
+    <p><em>Kesimpulan:</em> HTML dan CSS adalah pondasi utama dalam membangun halaman web. Dengan HTML kita bisa menyusun konten, dan dengan CSS kita bisa mempercantik tampilan. Keduanya wajib dikuasai oleh setiap web developer pemula sebelum melangkah ke level lanjutan seperti JavaScript, framework, atau backend.</p>
+    <p><em>Diketik oleh Agus Susilo</em></p>
+
+</body>
+</html>
